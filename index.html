@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dictionary</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Word Dictionary</h2>
+            <input type="text" id="search" placeholder="Enter any word">
+            <button type="button" id="btn" onclick="search()">Search</button>
+        </div>
+        <div class="showing-result" id="showing-result">
+            <h3 class="word-title" id="word-title"></h3>
+            <p class="error-message" id="error-message"></p> 
+            <button id="audioBtn" style="border-radius: 50%; color: white;">
+                <box-icon type='solid' name='volume-full'></box-icon>
+            </button>
+            <ul class="meaning-list" id="meaning-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
